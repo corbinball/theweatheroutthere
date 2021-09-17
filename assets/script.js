@@ -20,10 +20,9 @@ var formSubmitHandler = function (event) {
 };
 
 var buttonClickHandler = function (event) {
-  // `event.target` is a reference to the DOM element of what programming language button was clicked on the page
+
   var weather = event.target.getAttribute('data-weather');
 
-  // If there is no language read from the button, don't attempt to fetch repos
   if (weather) {
     getFeaturedWeather(weather);
 
